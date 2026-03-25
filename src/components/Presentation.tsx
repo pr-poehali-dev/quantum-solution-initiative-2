@@ -11,10 +11,10 @@ const slides = [
       type: "definition",
       definition: "Самостоятельная стадия судебного разбирательства — устные выступления участников с подведением итогов спора",
       items: [
-        { icon: "BookOpen", label: "Познавательное", desc: "Суд получает обобщённую информацию" },
-        { icon: "Scale", label: "Убеждающее", desc: "Стороны обосновывают свою позицию" },
-        { icon: "Search", label: "Контрольное", desc: "Выявление ошибок и пробелов" },
-        { icon: "Shield", label: "Процессуальное", desc: "Реализация права на защиту" },
+        { icon: "BookOpen", label: "Познавательное", desc: "Суд получает обобщённую и систематизированную информацию" },
+        { icon: "Scale", label: "Убеждающее", desc: "Стороны обосновывают свою правовую позицию" },
+        { icon: "Search", label: "Контрольное", desc: "Участники указывают на ошибки и пробелы" },
+        { icon: "Shield", label: "Процессуальное", desc: "Реализация права на судебную защиту" },
       ],
     },
   },
@@ -26,30 +26,42 @@ const slides = [
     schema: {
       type: "two-columns",
       left: {
-        label: "Участвуют",
-        color: "green",
-        items: ["Истец", "Ответчик", "Заявители", "Заинтересованные лица", "Третьи лица", "Представители сторон"],
+        label: "Участвуют в прениях",
+        items: [
+          "Истец",
+          "Ответчик",
+          "Заявители",
+          "Заинтересованные лица",
+          "Третьи лица",
+          "Представители участников",
+        ],
       },
       right: {
-        label: "Не участвуют",
-        color: "red",
-        items: ["Эксперты", "Специалисты", "Свидетели", "Переводчики", "Помощник судьи", "Секретарь заседания"],
+        label: "Не участвуют в прениях",
+        items: [
+          "Эксперты",
+          "Специалисты",
+          "Свидетели",
+          "Переводчики",
+          "Помощник судьи",
+          "Секретарь судебного заседания",
+        ],
       },
     },
   },
   {
     id: 3,
-    title: "Порядок выступлений",
-    subtitle: "Последовательность речей в прениях",
+    title: "Порядок выступлений в прениях",
+    subtitle: "Последовательность речей",
     image: "https://cdn.poehali.dev/projects/b3692c24-792a-4518-8595-7132b3370a3f/files/587966d8-d577-4377-9cd2-9b9bed5e9813.jpg",
     schema: {
       type: "steps",
       items: [
         { step: "1", label: "Истец", note: "Открывает прения" },
-        { step: "2", label: "Третье лицо на стороне истца", note: "Без самост. требований" },
+        { step: "2", label: "Третье лицо на стороне истца", note: "Без самостоятельных требований" },
         { step: "3", label: "Ответчик", note: "Излагает свою позицию" },
-        { step: "4", label: "Третье лицо на стороне ответчика", note: "Без самост. требований" },
-        { step: "5", label: "Третье лицо с самост. требованиями", note: "Завершает основные речи" },
+        { step: "4", label: "Третье лицо на стороне ответчика", note: "Без самостоятельных требований" },
+        { step: "5", label: "Третье лицо с самостоятельными требованиями", note: "Завершает основные речи" },
       ],
     },
   },
@@ -62,8 +74,8 @@ const slides = [
       type: "features",
       items: [
         { icon: "Clock", label: "Ограничение времени", desc: "Суд вправе ограничить продолжительность выступления" },
-        { icon: "FileText", label: "Записи и документы", desc: "Можно пользоваться в ходе речи" },
-        { icon: "Ban", label: "Контроль судьи", desc: "Судья останавливает при выходе за рамки дела" },
+        { icon: "FileText", label: "Записи и документы", desc: "Разрешено использовать в ходе речи" },
+        { icon: "Ban", label: "Контроль судьи", desc: "Судья вправе остановить при выходе за рамки дела" },
         { icon: "Users", label: "Равные условия", desc: "Все участники в равных процессуальных условиях" },
       ],
     },
@@ -75,44 +87,44 @@ const slides = [
     image: "https://cdn.poehali.dev/projects/b3692c24-792a-4518-8595-7132b3370a3f/files/783cc785-5199-468c-bd11-ed1c0a6e91b7.jpg",
     schema: {
       type: "replica",
-      definition: "Реплика — краткое выступление после основных речей с возражениями, замечаниями или уточнениями",
+      definition: "Реплика — краткое выступление после основных речей, содержащее возражения, замечания или уточнения",
       rules: [
         "Очерёдность — как при основных выступлениях",
-        "Последняя реплика — всегда у ответчика",
+        "Последняя реплика — всегда за ответчиком",
         "От реплики можно отказаться",
-        "Нельзя повторять основную речь",
-        "Ссылки только на уже обсуждённое",
-        "Суд вправе ограничить число и длительность",
+        "Нельзя повторять содержание основной речи",
+        "Ссылки допустимы только на уже обсуждённое",
+        "Суд вправе ограничить число реплик и их длительность",
       ],
     },
   },
   {
     id: 6,
-    title: "Ограничения в прениях",
+    title: "Ограничения в судебных прениях",
     subtitle: "Что нельзя использовать",
     image: "https://cdn.poehali.dev/projects/b3692c24-792a-4518-8595-7132b3370a3f/files/fd21235e-00b8-4a13-bdbe-4af41b4419c9.jpg",
     schema: {
       type: "prohibitions",
-      reason: "Решение должно основываться только на проверенных и юридически значимых данных",
+      reason: "Решение суда должно основываться только на проверенных и юридически значимых данных",
       items: [
-        { icon: "XCircle", label: "Невыясненные обстоятельства", desc: "Факты, не рассматривавшиеся судом" },
-        { icon: "XCircle", label: "Неисследованные доказательства", desc: "Не изученные в ходе заседания" },
-        { icon: "XCircle", label: "Недопустимые доказательства", desc: "Признанные таковыми судом" },
+        { icon: "XCircle", label: "Невыясненные обстоятельства", desc: "Факты, которые не рассматривались судом" },
+        { icon: "XCircle", label: "Неисследованные доказательства", desc: "Доказательства, не изученные в ходе заседания" },
+        { icon: "XCircle", label: "Недопустимые доказательства", desc: "Доказательства, признанные таковыми судом" },
       ],
     },
   },
   {
     id: 7,
     title: "Письменная форма прений",
-    subtitle: "Фиксация аргументов",
-    image: "https://cdn.poehali.dev/projects/b3692c24-792a-4518-8595-7132b3370a3f/files/fd21235e-00b8-4a13-bdbe-4af41b4419c9.jpg",
+    subtitle: "Фиксация позиции в деле",
+    image: "https://cdn.poehali.dev/projects/b3692c24-792a-4518-8595-7132b3370a3f/files/783cc785-5199-468c-bd11-ed1c0a6e91b7.jpg",
     schema: {
       type: "flow",
       steps: [
-        { icon: "Mic", label: "Устное выступление", desc: "Основная речь в прениях" },
+        { icon: "Mic", label: "Устное выступление", desc: "Основная речь в ходе прений" },
         { icon: "PenLine", label: "Письменные тезисы", desc: "Составляются после устного выступления" },
-        { icon: "Folder", label: "Приобщение к делу", desc: "Суд включает в материалы дела" },
-        { icon: "Archive", label: "Фиксация аргументов", desc: "Позиция сохранена в деле" },
+        { icon: "Folder", label: "Приобщение к делу", desc: "Суд включает текст в материалы дела" },
+        { icon: "Archive", label: "Фиксация аргументов", desc: "Правовая позиция закреплена в деле" },
       ],
     },
   },
@@ -124,22 +136,24 @@ const slides = [
     schema: {
       type: "final",
       stages: [
-        { icon: "MessageSquare", label: "Прения и реплики", status: "done" },
-        { icon: "DoorClosed", label: "Совещательная комната", status: "done" },
-        { icon: "FileCheck", label: "Оглашение решения", status: "done" },
+        { icon: "MessageSquare", label: "Прения и реплики завершены" },
+        { icon: "DoorClosed", label: "Суд удаляется в совещательную комнату" },
+        { icon: "FileCheck", label: "Решение оглашается" },
       ],
       resumeReasons: [
-        "Новые обстоятельства",
-        "Новые доказательства",
-        "Существенные противоречия",
+        "Необходимость выяснить новые обстоятельства",
+        "Исследование новых доказательств",
+        "Выявление существенных противоречий",
         "Ошибки в оценке доказательств",
-        "Фальсификация доказательств",
+        "Сведения о фальсификации доказательств",
       ],
     },
   },
 ];
 
-const SchemaDefinition = ({ schema }: { schema: typeof slides[0]["schema"] }) => {
+type SlideSchema = typeof slides[0]["schema"];
+
+const SchemaDefinition = ({ schema }: { schema: SlideSchema }) => {
   if (schema.type === "definition") {
     return (
       <div className="flex flex-col gap-4 w-full">
@@ -147,14 +161,14 @@ const SchemaDefinition = ({ schema }: { schema: typeof slides[0]["schema"] }) =>
           {schema.definition}
         </div>
         <div className="grid grid-cols-2 gap-3">
-          {schema.items?.map((item) => (
+          {"items" in schema && schema.items?.map((item) => (
             <div key={item.label} className="flex items-start gap-3 rounded-lg border border-slate-700 bg-slate-800/60 p-3">
               <div className="mt-0.5 flex h-7 w-7 shrink-0 items-center justify-center rounded-md bg-[#7170ff]/20">
                 <Icon name={item.icon} size={14} className="text-[#7170ff]" />
               </div>
               <div>
                 <div className="text-xs font-semibold text-white">{item.label}</div>
-                <div className="text-xs text-slate-400 leading-relaxed">{item.desc}</div>
+                <div className="text-xs text-slate-400 leading-relaxed mt-0.5">{item.desc}</div>
               </div>
             </div>
           ))}
@@ -169,10 +183,10 @@ const SchemaDefinition = ({ schema }: { schema: typeof slides[0]["schema"] }) =>
         <div className="rounded-xl border border-emerald-500/30 bg-emerald-500/10 p-4">
           <div className="mb-3 flex items-center gap-2">
             <Icon name="CheckCircle" size={16} className="text-emerald-400" />
-            <span className="text-sm font-semibold text-emerald-400">{schema.left?.label}</span>
+            <span className="text-sm font-semibold text-emerald-400">{"left" in schema ? schema.left?.label : ""}</span>
           </div>
           <ul className="space-y-2">
-            {schema.left?.items.map((item) => (
+            {"left" in schema && schema.left?.items.map((item) => (
               <li key={item} className="flex items-center gap-2 text-xs text-slate-200">
                 <span className="h-1.5 w-1.5 rounded-full bg-emerald-400 shrink-0" />
                 {item}
@@ -183,10 +197,10 @@ const SchemaDefinition = ({ schema }: { schema: typeof slides[0]["schema"] }) =>
         <div className="rounded-xl border border-rose-500/30 bg-rose-500/10 p-4">
           <div className="mb-3 flex items-center gap-2">
             <Icon name="XCircle" size={16} className="text-rose-400" />
-            <span className="text-sm font-semibold text-rose-400">{schema.right?.label}</span>
+            <span className="text-sm font-semibold text-rose-400">{"right" in schema ? schema.right?.label : ""}</span>
           </div>
           <ul className="space-y-2">
-            {schema.right?.items.map((item) => (
+            {"right" in schema && schema.right?.items.map((item) => (
               <li key={item} className="flex items-center gap-2 text-xs text-slate-200">
                 <span className="h-1.5 w-1.5 rounded-full bg-rose-400 shrink-0" />
                 {item}
@@ -201,19 +215,18 @@ const SchemaDefinition = ({ schema }: { schema: typeof slides[0]["schema"] }) =>
   if (schema.type === "steps") {
     return (
       <div className="flex flex-col gap-2 w-full">
-        {schema.items?.map((item, i) => (
-          <div key={item.step} className="flex items-center gap-3">
-            <div className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[#7170ff] text-xs font-bold text-white">
-              {item.step}
+        {"items" in schema && schema.items?.map((item) => (
+          "step" in item && (
+            <div key={item.step} className="flex items-start gap-3">
+              <div className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[#7170ff] text-xs font-bold text-white mt-0.5">
+                {item.step}
+              </div>
+              <div className="flex flex-1 flex-col rounded-lg border border-slate-700 bg-slate-800/60 px-4 py-2">
+                <span className="text-sm font-medium text-white leading-snug">{item.label}</span>
+                <span className="text-xs text-slate-400 mt-0.5">{"note" in item ? item.note : ""}</span>
+              </div>
             </div>
-            <div className="flex flex-1 items-center justify-between rounded-lg border border-slate-700 bg-slate-800/60 px-4 py-2">
-              <span className="text-sm font-medium text-white">{item.label}</span>
-              <span className="text-xs text-slate-400">{item.note}</span>
-            </div>
-            {i < (schema.items?.length ?? 0) - 1 && (
-              <div className="absolute" />
-            )}
-          </div>
+          )
         ))}
       </div>
     );
@@ -222,16 +235,18 @@ const SchemaDefinition = ({ schema }: { schema: typeof slides[0]["schema"] }) =>
   if (schema.type === "features") {
     return (
       <div className="grid grid-cols-2 gap-3 w-full">
-        {schema.items?.map((item) => (
-          <div key={item.label} className="flex items-start gap-3 rounded-lg border border-slate-700 bg-slate-800/60 p-4">
-            <div className="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-md bg-[#7170ff]/20">
-              <Icon name={item.icon} size={16} className="text-[#7170ff]" />
+        {"items" in schema && schema.items?.map((item) => (
+          "icon" in item && (
+            <div key={item.label} className="flex items-start gap-3 rounded-lg border border-slate-700 bg-slate-800/60 p-4">
+              <div className="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-md bg-[#7170ff]/20">
+                <Icon name={item.icon} size={16} className="text-[#7170ff]" />
+              </div>
+              <div>
+                <div className="text-sm font-semibold text-white leading-snug">{item.label}</div>
+                <div className="text-xs text-slate-400 mt-1 leading-relaxed">{"desc" in item ? item.desc : ""}</div>
+              </div>
             </div>
-            <div>
-              <div className="text-sm font-semibold text-white">{item.label}</div>
-              <div className="text-xs text-slate-400 mt-1 leading-relaxed">{item.desc}</div>
-            </div>
-          </div>
+          )
         ))}
       </div>
     );
@@ -241,10 +256,10 @@ const SchemaDefinition = ({ schema }: { schema: typeof slides[0]["schema"] }) =>
     return (
       <div className="flex flex-col gap-4 w-full">
         <div className="rounded-xl border border-[#7170ff]/40 bg-[#7170ff]/10 px-5 py-3 text-sm text-slate-200 text-center leading-relaxed">
-          {schema.definition}
+          {"definition" in schema ? schema.definition : ""}
         </div>
         <div className="grid grid-cols-2 gap-2">
-          {schema.rules?.map((rule) => (
+          {"rules" in schema && schema.rules?.map((rule) => (
             <div key={rule} className="flex items-start gap-2 rounded-lg border border-slate-700 bg-slate-800/50 px-3 py-2">
               <Icon name="ArrowRight" size={12} className="mt-0.5 shrink-0 text-[#7170ff]" />
               <span className="text-xs text-slate-300 leading-relaxed">{rule}</span>
@@ -260,17 +275,19 @@ const SchemaDefinition = ({ schema }: { schema: typeof slides[0]["schema"] }) =>
       <div className="flex flex-col gap-4 w-full">
         <div className="rounded-xl border border-amber-500/30 bg-amber-500/10 px-5 py-3 text-xs text-amber-200 text-center leading-relaxed">
           <Icon name="AlertTriangle" size={14} className="inline mr-2 text-amber-400" />
-          {schema.reason}
+          {"reason" in schema ? schema.reason : ""}
         </div>
         <div className="flex flex-col gap-3">
-          {schema.items?.map((item) => (
-            <div key={item.label} className="flex items-start gap-4 rounded-lg border border-rose-500/30 bg-rose-500/10 px-4 py-3">
-              <Icon name="XCircle" size={20} className="mt-0.5 shrink-0 text-rose-400" />
-              <div>
-                <div className="text-sm font-semibold text-rose-300">{item.label}</div>
-                <div className="text-xs text-slate-400 mt-0.5">{item.desc}</div>
+          {"items" in schema && schema.items?.map((item) => (
+            "icon" in item && (
+              <div key={item.label} className="flex items-start gap-4 rounded-lg border border-rose-500/30 bg-rose-500/10 px-4 py-3">
+                <Icon name="XCircle" size={20} className="mt-0.5 shrink-0 text-rose-400" />
+                <div>
+                  <div className="text-sm font-semibold text-rose-300 leading-snug">{item.label}</div>
+                  <div className="text-xs text-slate-400 mt-0.5">{"desc" in item ? item.desc : ""}</div>
+                </div>
               </div>
-            </div>
+            )
           ))}
         </div>
       </div>
@@ -278,20 +295,21 @@ const SchemaDefinition = ({ schema }: { schema: typeof slides[0]["schema"] }) =>
   }
 
   if (schema.type === "flow") {
+    const steps = "steps" in schema ? schema.steps : [];
     return (
-      <div className="flex flex-col gap-3 w-full">
-        {schema.steps?.map((step, i) => (
+      <div className="flex flex-col gap-2.5 w-full">
+        {steps?.map((step, i) => (
           <div key={step.label} className="flex items-center gap-3">
             <div className="flex items-center gap-3 flex-1 rounded-lg border border-slate-700 bg-slate-800/60 px-4 py-3">
               <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-md bg-[#7170ff]/20">
                 <Icon name={step.icon} size={16} className="text-[#7170ff]" />
               </div>
               <div>
-                <div className="text-sm font-semibold text-white">{step.label}</div>
-                <div className="text-xs text-slate-400">{step.desc}</div>
+                <div className="text-sm font-semibold text-white leading-snug">{step.label}</div>
+                <div className="text-xs text-slate-400 mt-0.5">{step.desc}</div>
               </div>
             </div>
-            {i < (schema.steps?.length ?? 0) - 1 && (
+            {i < (steps?.length ?? 0) - 1 && (
               <Icon name="ChevronDown" size={18} className="text-slate-500 shrink-0" />
             )}
           </div>
@@ -301,18 +319,20 @@ const SchemaDefinition = ({ schema }: { schema: typeof slides[0]["schema"] }) =>
   }
 
   if (schema.type === "final") {
+    const stages = "stages" in schema ? schema.stages : [];
+    const resumeReasons = "resumeReasons" in schema ? schema.resumeReasons : [];
     return (
       <div className="flex flex-col gap-4 w-full">
         <div className="flex items-center justify-between gap-2">
-          {schema.stages?.map((stage, i) => (
+          {stages?.map((stage, i) => (
             <div key={stage.label} className="flex items-center gap-2 flex-1">
-              <div className="flex flex-1 flex-col items-center gap-2 rounded-lg border border-emerald-500/30 bg-emerald-500/10 px-3 py-3">
+              <div className="flex flex-1 flex-col items-center gap-2 rounded-lg border border-emerald-500/30 bg-emerald-500/10 px-2 py-3">
                 <div className="flex h-8 w-8 items-center justify-center rounded-full bg-emerald-500/20">
                   <Icon name={stage.icon} size={16} className="text-emerald-400" />
                 </div>
-                <span className="text-xs text-center font-medium text-emerald-300">{stage.label}</span>
+                <span className="text-xs text-center font-medium text-emerald-300 leading-snug">{stage.label}</span>
               </div>
-              {i < (schema.stages?.length ?? 0) - 1 && (
+              {i < (stages?.length ?? 0) - 1 && (
                 <Icon name="ChevronRight" size={16} className="text-slate-500 shrink-0" />
               )}
             </div>
@@ -321,10 +341,10 @@ const SchemaDefinition = ({ schema }: { schema: typeof slides[0]["schema"] }) =>
         <div className="rounded-xl border border-slate-700 bg-slate-800/60 p-4">
           <div className="mb-3 flex items-center gap-2">
             <Icon name="RefreshCw" size={14} className="text-amber-400" />
-            <span className="text-xs font-semibold text-amber-400">Основания для возобновления дела</span>
+            <span className="text-xs font-semibold text-amber-400">Основания для возобновления рассмотрения дела</span>
           </div>
           <div className="grid grid-cols-2 gap-2">
-            {schema.resumeReasons?.map((reason) => (
+            {resumeReasons?.map((reason) => (
               <div key={reason} className="flex items-center gap-2 text-xs text-slate-300">
                 <span className="h-1.5 w-1.5 rounded-full bg-amber-400 shrink-0" />
                 {reason}
@@ -360,7 +380,7 @@ export const Presentation = () => {
         </div>
 
         <div className="rounded-2xl border border-slate-800 bg-[#0f0f1a] overflow-hidden shadow-2xl">
-          <div className="grid grid-cols-2 min-h-[500px]">
+          <div className="grid grid-cols-2 min-h-[520px]">
             <div className="relative overflow-hidden">
               <img
                 src={slide.image}
@@ -376,12 +396,12 @@ export const Presentation = () => {
               </div>
             </div>
 
-            <div className="flex flex-col justify-between p-8">
+            <div className="flex flex-col justify-between p-8 overflow-y-auto">
               <div>
                 <div className="mb-1 text-xs font-medium text-[#7170ff] uppercase tracking-widest">
                   Слайд {slide.id}
                 </div>
-                <h2 className="mb-6 text-xl font-bold leading-snug text-white">
+                <h2 className="mb-5 text-xl font-bold leading-snug text-white">
                   {slide.title}
                 </h2>
                 <SchemaDefinition schema={slide.schema} />
