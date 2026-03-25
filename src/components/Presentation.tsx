@@ -388,12 +388,6 @@ export const Presentation = () => {
                 className="absolute inset-0 w-full h-full object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-r from-transparent to-[#0f0f1a]" />
-              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-[#0f0f1a]/80 to-transparent p-6">
-                <div className="inline-flex items-center gap-1.5 rounded-full border border-[#7170ff]/40 bg-[#7170ff]/10 px-3 py-1 text-xs text-[#7170ff] mb-2">
-                  <Icon name="BookMarked" size={11} />
-                  {slide.subtitle}
-                </div>
-              </div>
             </div>
 
             <div className="flex flex-col justify-between p-8 overflow-y-auto">
