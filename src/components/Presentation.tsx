@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Icon from "@/components/ui/icon";
+import { generatePptx } from "@/lib/generatePptx";
 
 const slides = [
   {
@@ -361,10 +362,20 @@ const SchemaDefinition = ({ schema }: { schema: SlideSchema }) => {
 
 export const Presentation = () => {
   const [current, setCurrent] = useState(0);
+  const [downloading, setDownloading] = useState(false);
   const slide = slides[current];
 
   const prev = () => setCurrent((c) => Math.max(0, c - 1));
   const next = () => setCurrent((c) => Math.min(slides.length - 1, c + 1));
+
+  const handleDownload = async () => {
+    setDownloading(true);
+    try {
+      await generatePptx();
+    } finally {
+      setDownloading(false);
+    }
+  };
 
   return (
     <div className="min-h-screen bg-[#0a0a0f] flex flex-col items-center justify-center p-6">
@@ -374,9 +385,17 @@ export const Presentation = () => {
             <Icon name="Scale" size={18} className="text-[#7170ff]" />
             <span className="text-sm font-medium text-slate-400">Гражданский процесс · Судебные прения</span>
           </div>
-          <span className="text-sm text-slate-500">
-            {current + 1} / {slides.length}
-          </span>
+          <div className="flex items-center gap-3">
+            <span className="text-sm text-slate-500">{current + 1} / {slides.length}</span>
+            <button
+              onClick={handleDownload}
+              disabled={downloading}
+              className="flex items-center gap-2 rounded-lg border border-[#7170ff]/50 bg-[#7170ff]/10 px-4 py-2 text-sm text-[#7170ff] transition hover:bg-[#7170ff]/20 disabled:opacity-50 disabled:cursor-not-allowed"
+            >
+              <Icon name={downloading ? "Loader" : "Download"} size={15} />
+              {downloading ? "Генерация..." : "Скачать PPTX"}
+            </button>
+          </div>
         </div>
 
         <div className="rounded-2xl border border-slate-800 bg-[#0f0f1a] overflow-hidden shadow-2xl">
