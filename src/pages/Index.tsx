@@ -1,9 +1,9 @@
-import { Hero3DStage } from "@/components/Hero3DStage"
+import Presentation from "@/components/Presentation"
 
 const Index = () => {
   return (
     <main>
-      <Hero3DStage />
+      <Presentation />
     </main>
   )
 }
