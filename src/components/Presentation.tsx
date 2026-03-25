@@ -6,7 +6,7 @@ const slides = [
     id: 1,
     title: "Понятие и значение судебных прений",
     subtitle: "Ст. 190 ГПК РФ",
-    image: "https://cdn.poehali.dev/projects/b3692c24-792a-4518-8595-7132b3370a3f/files/b6d5e366-4152-4cb3-b882-37f6465a34c4.jpg",
+    image: "https://cdn.poehali.dev/projects/b3692c24-792a-4518-8595-7132b3370a3f/files/4ebfe351-b4a3-46a7-b608-59434ee266ae.jpg",
     schema: {
       type: "definition",
       definition: "Самостоятельная стадия судебного разбирательства — устные выступления участников с подведением итогов спора",
@@ -22,7 +22,7 @@ const slides = [
     id: 2,
     title: "Участники судебных прений",
     subtitle: "Кто вправе выступать",
-    image: "https://cdn.poehali.dev/projects/b3692c24-792a-4518-8595-7132b3370a3f/files/95e25b7c-b2ae-44c7-8563-13edef235791.jpg",
+    image: "https://cdn.poehali.dev/projects/b3692c24-792a-4518-8595-7132b3370a3f/files/4a2f30ec-1ea3-4b37-9bbc-f6524550ab86.jpg",
     schema: {
       type: "two-columns",
       left: {
@@ -53,7 +53,7 @@ const slides = [
     id: 3,
     title: "Порядок выступлений в прениях",
     subtitle: "Последовательность речей",
-    image: "https://cdn.poehali.dev/projects/b3692c24-792a-4518-8595-7132b3370a3f/files/587966d8-d577-4377-9cd2-9b9bed5e9813.jpg",
+    image: "https://cdn.poehali.dev/projects/b3692c24-792a-4518-8595-7132b3370a3f/files/8c99acd1-5e98-4132-b3fc-55a3148b5342.jpg",
     schema: {
       type: "steps",
       items: [
@@ -69,7 +69,7 @@ const slides = [
     id: 4,
     title: "Практические особенности прений",
     subtitle: "Правила проведения",
-    image: "https://cdn.poehali.dev/projects/b3692c24-792a-4518-8595-7132b3370a3f/files/1fb572d8-5db9-43bb-aafc-812a6a059b4b.jpg",
+    image: "https://cdn.poehali.dev/projects/b3692c24-792a-4518-8595-7132b3370a3f/files/26161225-41bd-4856-9cbf-496b81b8e594.jpg",
     schema: {
       type: "features",
       items: [
@@ -84,7 +84,7 @@ const slides = [
     id: 5,
     title: "Реплики в судебных прениях",
     subtitle: "Краткие ответы на доводы оппонентов",
-    image: "https://cdn.poehali.dev/projects/b3692c24-792a-4518-8595-7132b3370a3f/files/783cc785-5199-468c-bd11-ed1c0a6e91b7.jpg",
+    image: "https://cdn.poehali.dev/projects/b3692c24-792a-4518-8595-7132b3370a3f/files/8d089b74-0133-4c48-8819-db25b04c3ac8.jpg",
     schema: {
       type: "replica",
       definition: "Реплика — краткое выступление после основных речей, содержащее возражения, замечания или уточнения",
@@ -102,7 +102,7 @@ const slides = [
     id: 6,
     title: "Ограничения в судебных прениях",
     subtitle: "Что нельзя использовать",
-    image: "https://cdn.poehali.dev/projects/b3692c24-792a-4518-8595-7132b3370a3f/files/fd21235e-00b8-4a13-bdbe-4af41b4419c9.jpg",
+    image: "https://cdn.poehali.dev/projects/b3692c24-792a-4518-8595-7132b3370a3f/files/e7c792aa-50da-465d-a156-82af188c0b9e.jpg",
     schema: {
       type: "prohibitions",
       reason: "Решение суда должно основываться только на проверенных и юридически значимых данных",
@@ -117,7 +117,7 @@ const slides = [
     id: 7,
     title: "Письменная форма прений",
     subtitle: "Фиксация позиции в деле",
-    image: "https://cdn.poehali.dev/projects/b3692c24-792a-4518-8595-7132b3370a3f/files/783cc785-5199-468c-bd11-ed1c0a6e91b7.jpg",
+    image: "https://cdn.poehali.dev/projects/b3692c24-792a-4518-8595-7132b3370a3f/files/1431fa19-d82e-4692-bc88-1cfa32896d29.jpg",
     schema: {
       type: "flow",
       steps: [
@@ -132,7 +132,7 @@ const slides = [
     id: 8,
     title: "Завершение прений и дальнейшие стадии",
     subtitle: "Переход к вынесению решения",
-    image: "https://cdn.poehali.dev/projects/b3692c24-792a-4518-8595-7132b3370a3f/files/cc2ec31b-4f7b-4683-92e0-11558cbb2063.jpg",
+    image: "https://cdn.poehali.dev/projects/b3692c24-792a-4518-8595-7132b3370a3f/files/2ddf3864-0d97-4ac0-8022-5bdd590134d5.jpg",
     schema: {
       type: "final",
       stages: [
